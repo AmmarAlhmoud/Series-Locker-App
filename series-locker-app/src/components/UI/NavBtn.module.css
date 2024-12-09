@@ -1,0 +1,31 @@
+.btn {
+  width: 9rem;
+  height: 2.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 2em;
+  background-color: #1b1d21;
+  overflow: hidden !important;
+}
+
+.nav-link {
+  padding: 2em 2.2em;
+}
+
+.nav-link-error {
+  padding: 0.7em 0.9em !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btn:is(:hover, :focus) {
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}

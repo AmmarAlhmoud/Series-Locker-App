@@ -1,0 +1,120 @@
+.card {
+  justify-self: center;
+  position: relative;
+  margin-top: 6rem;
+  height: 300px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 1.2em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  row-gap: 1.5rem;
+}
+
+.card > img {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.card > img:hover {
+  cursor: pointer;
+}
+
+.card > h2 {
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card > p,
+.card > time {
+  font-size: 1.1rem;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  z-index: 1;
+}
+
+.div > button {
+  font-weight: 600;
+  color: #fff;
+  height: 40px;
+  width: 100px;
+  background-color: black;
+  border-radius: 1.2em;
+}
+
+.div > button:hover {
+  cursor: pointer;
+}
+
+.menu-list {
+  position: absolute;
+  top: 42px;
+  right: 28px;
+  height: 100px;
+  width: 150px;
+  display: grid;
+  padding: 1.2em;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 0.4em;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 5;
+  animation: slideDown 0.5s ease forwards;
+}
+
+.menu-list.hidden {
+  display: none;
+}
+
+.menu-list > p {
+  justify-self: center;
+  height: 100%;
+  width: 100%;
+  font-weight: 700;
+}
+.menu-list > p:nth-child(1) {
+  margin-top: 0.2em;
+  color: rgb(230, 6, 6);
+}
+
+.menu-list > p:nth-child(1) > a {
+  width: 100%;
+  height: 100%;
+}
+.menu-list > p:nth-child(2) {
+  margin-top: 0.7em;
+  color: rgb(0, 0, 0);
+}
+
+.menu-list > p:hover {
+  cursor: pointer;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translate(20%, -20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

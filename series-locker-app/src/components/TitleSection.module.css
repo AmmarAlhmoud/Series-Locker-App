@@ -1,0 +1,50 @@
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-section {
+  height: 300px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100 1fr;
+  justify-content: center;
+}
+
+.noContent {
+  height: 100px !important;
+}
+
+.main-section > h2 {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+}
+
+.main-section > div {
+  width: 930px;
+  height: 200px;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  line-height: 1.4;
+}
+
+.main-section > div p {
+  font-family: "Playfair";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.4rem;
+}
+
+.p {
+  color: #e9e6e6;
+}
