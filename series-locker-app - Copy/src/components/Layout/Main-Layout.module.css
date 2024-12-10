@@ -1,0 +1,118 @@
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  min-width: 100% !important;
+  display: grid;
+  grid-template-rows: 52rem 2fr;
+  gap: 1em;
+  position: relative;
+  color: #fff;
+  background-color: black;
+}
+
+.main-sec {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 6em;
+  display: flex;
+  flex-flow: column nowrap;
+  z-index: 0;
+}
+
+.header {
+  /* <weight>: Use a value from 300 to 900 */
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  color: #dfe7fd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.header > div img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.header > p {
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+  line-height: 1.4px;
+}
+
+.sec-1 {
+  height: 600px;
+  width: 1050px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.decoration-1,
+.decoration-2,
+.decoration-3 {
+  position: absolute;
+  top: 30px;
+  left: 145px;
+  height: 500px;
+  width: 1025px;
+  border: 1.2px solid #dfe7fd;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.decoration-1 {
+  transform: rotate(-28deg);
+}
+
+.decoration-2 {
+  transform: rotate(-11deg);
+}
+.decoration-3 {
+  transform: rotate(11deg);
+}
+
+.sec-2 {
+  position: absolute;
+  top: 330px;
+  left: 155px;
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6.3rem;
+  color: #dfe7fd;
+  z-index: 2;
+}
+.sec-3 {
+  position: absolute;
+  top: 43rem;
+  left: 47rem;
+}
+
+.children-sec {
+  display: grid;
+  grid-template-rows: 1fr 12rem;
+  min-height: 500px;
+  width: 100%;
+  background-color: #fff;
+}

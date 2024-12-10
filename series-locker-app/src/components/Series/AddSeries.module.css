@@ -108,3 +108,33 @@
   font-weight: 800;
   margin: 0 0 0.2rem 0.8rem;
 }
+
+@media (max-width: 1282px) {
+  .main-section {
+    max-width: 1282px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-section {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    max-width: 768px;
+  }
+  .input-title > p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 640px) {
+  .main-section {
+    max-width: 600px;
+  }
+}
+@media (max-width: 482px) {
+  .main-section {
+    max-width: 482px;
+  }
+}

@@ -63,3 +63,34 @@
   opacity: 0.8 !important;
 }
 
+@media (max-width: 768px) {
+  .input {
+    max-width: 28rem;
+  }
+
+  .input label {
+    font-size: 0.9rem;
+  }
+
+  .input-container {
+    font-size: 0.9rem;
+    max-width: 28rem;
+  }
+}
+@media (max-width: 640px) {
+  .input {
+    max-width: 22rem;
+  }
+  .input-container {
+    max-width: 22rem;
+  }
+}
+@media (max-width: 482px) {
+  .input {
+    max-width: 16rem;
+  }
+
+  .input-container {
+    max-width: 16rem;
+  }
+}

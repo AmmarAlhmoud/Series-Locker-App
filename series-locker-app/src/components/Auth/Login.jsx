@@ -10,8 +10,7 @@ import Suggestion from "../Suggestion";
 import BarLoader from "../UI/BarLoader";
 
 import styles from "./Login.module.css";
-import { useDispatch } from "react-redux";
-import { appStateActions } from "../../store/app-state-slice";
+
 
 const Login = () => {
   const [loading, setLoading] = useState(false);
@@ -86,6 +85,7 @@ const Login = () => {
           email: formData.email?.trim(),
           password: formData.password?.trim(),
         });
+        setLoading(true);
       }
     }
   };
@@ -124,7 +124,6 @@ const Login = () => {
     };
 
     if (submittedData !== null) {
-      setLoading(true);
       login();
       setSubmittedData(null);
       setLoading(false);

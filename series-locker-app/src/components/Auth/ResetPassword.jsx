@@ -74,6 +74,7 @@ const ResetPassword = () => {
           ...formData,
           email: formData.email?.trim(),
         });
+        setLoading(true);
       }
     }
   };
@@ -103,7 +104,6 @@ const ResetPassword = () => {
     };
 
     if (submittedData !== null) {
-      setLoading(true);
       forgotPassword();
       setSubmittedData(null);
       setLoading(false);

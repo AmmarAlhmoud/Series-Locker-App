@@ -14,3 +14,35 @@
   margin-top: 8rem;
   text-align: center;
 }
+
+@media (max-width: 1282px) {
+  .main-section {
+    max-width: 1282px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-section {
+    max-width: 1024px;
+  }
+
+  .navigation-section {
+    border-right: 3px solid #333;
+    border-left: 3px solid #333;
+  }
+}
+@media (max-width: 768px) {
+  .main-section {
+    max-width: 768px;
+  }
+}
+@media (max-width: 640px) {
+  .main-section {
+    padding: 6em;
+    max-width: 600px;
+  }
+}
+@media (max-width: 482px) {
+  .main-section {
+    max-width: 482px;
+  }
+}

@@ -109,3 +109,50 @@
   color: #fff;
   font-weight: 800;
 }
+
+@media (max-width: 1282px) {
+  .login-section {
+    max-width: 1282px;
+  }
+}
+@media (max-width: 1024px) {
+  .login-section {
+    max-width: 1024px;
+  }
+
+  .reset-password {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-section {
+    max-width: 768px;
+  }
+  .form-section {
+    margin-top: 2rem;
+  }
+
+  .reset-password {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 640px) {
+  .login-section {
+    max-width: 600px;
+  }
+  .reset-password {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 482px) {
+  .login-section {
+    max-width: 482px;
+  }
+
+  .reset-password {
+    font-size: 0.7rem;
+  }
+}

@@ -1,9 +1,7 @@
 import { useState, useRef, useEffect } from "react";
-import { backIn } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { appStateActions } from "../../store/app-state-slice";
 import Select from "react-select";
-import CreatableSelect from "react-select/creatable";
 
 const Dropdown = ({
   isEmpty,
@@ -17,6 +15,7 @@ const Dropdown = ({
 }) => {
   const selectRef = useRef();
   const [currentFetchedData, setCurrentFetchedData] = useState({});
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   let selectedItem = "";
 
@@ -40,6 +39,9 @@ const Dropdown = ({
     return {
       ...styles,
       color: "black",
+      ...(windowWidth <= 768 && {
+        fontSize: "0.9rem",
+      }),
     };
   };
 
@@ -47,9 +49,11 @@ const Dropdown = ({
     return {
       ...styles,
       color: "black",
-
+      ...(windowWidth <= 768 && {
+        fontSize: "0.9rem",
+      }),
       ":hover": {
-        color: "rgba(255, 255, 255,80%)",
+        color: "rgba(0, 0, 0,65%)",
       },
     };
   };
@@ -59,6 +63,26 @@ const Dropdown = ({
     menu: (styles) => ({
       ...styles,
       width: width ? width : 564,
+      ...(windowWidth <= 1439 && {
+        maxWidth: width ? "21rem" : "36rem",
+        fontSize: "0.9rem",
+      }),
+      ...(windowWidth <= 1280 && {
+        maxWidth: width ? "20rem" : "36rem",
+      }),
+      ...(windowWidth <= 1024 && {
+        maxWidth: width ? "18rem" : "36rem",
+      }),
+      ...(windowWidth <= 768 && {
+        maxWidth: width ? "16rem" : "27.4rem",
+      }),
+      ...(windowWidth <= 640 && {
+        maxWidth: width ? "13rem" : "21.4rem",
+      }),
+      ...(windowWidth <= 482 && {
+        maxWidth: width ? "11.4rem" : "15.4rem",
+      }),
+
       marginLeft: "0.4em",
       backgroundColor: "rgba(187, 187, 187, 100%)",
     }),
@@ -70,6 +94,25 @@ const Dropdown = ({
       marginLeft: "0.4em",
       height: "auto",
       width: width ? width : 565,
+      ...(windowWidth <= 1439 && {
+        maxWidth: width ? "21rem" : "36rem",
+        fontSize: "0.9rem",
+      }),
+      ...(windowWidth <= 1280 && {
+        maxWidth: width ? "20rem" : "36rem",
+      }),
+      ...(windowWidth <= 1024 && {
+        maxWidth: width ? "18rem" : "36rem",
+      }),
+      ...(windowWidth <= 768 && {
+        maxWidth: width ? "16rem" : "27.4rem",
+      }),
+      ...(windowWidth <= 640 && {
+        maxWidth: width ? "13rem" : "21.4rem",
+      }),
+      ...(windowWidth <= 482 && {
+        maxWidth: width ? "11.4rem" : "15.4rem",
+      }),
       // ":hover": {
       //   border: "2px solid #b2b4b7",
       // },
@@ -129,18 +172,26 @@ const Dropdown = ({
         },
       };
     },
+    // where you type
     input: (styles) => {
       return {
         ...styles,
         color: "black",
         paddingLeft: "0.2em",
+        ...(windowWidth <= 768 && {
+          fontSize: "0.9rem",
+        }),
       };
     },
+    // value you choose
     singleValue: (styles) => {
       return {
         ...styles,
         color: "black",
         paddingLeft: "0.2em",
+        ...(windowWidth <= 768 && {
+          fontSize: "0.9rem",
+        }),
       };
     },
     multiValueLabel: BlackColor,
@@ -155,6 +206,9 @@ const Dropdown = ({
         color: "#717070",
         textAlign: "start",
         paddingLeft: "0.2em",
+        ...(windowWidth <= 768 && {
+          fontSize: "0.9rem",
+        }),
       };
     },
   };
@@ -190,6 +244,13 @@ const Dropdown = ({
     if (!fetchedValue && identifier === "watchingType") {
       dispatch(appStateActions.setSelectedWatchingType(null));
     }
+
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, [fetchedValue, searchField, currentFetchedData]);
 
   return (

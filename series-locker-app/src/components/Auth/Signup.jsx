@@ -116,6 +116,7 @@ const Signup = () => {
           password: formData.password?.trim(),
           confirmPassword: formData.confirmPassword?.trim(),
         });
+        setLoading(true);
       }
     }
   };
@@ -155,7 +156,6 @@ const Signup = () => {
     };
 
     if (submittedData !== null) {
-      setLoading(true);
       signup();
       setSubmittedData(null);
       setLoading(false);

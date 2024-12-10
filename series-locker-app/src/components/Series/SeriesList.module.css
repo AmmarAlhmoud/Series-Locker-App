@@ -116,3 +116,160 @@
   grid-template-rows: 1fr !important;
   place-content: center;
 }
+
+@media (max-width: 1439px) {
+  .form-section {
+    max-width: 1480px;
+  }
+
+  .input {
+    max-width: 22rem;
+  }
+
+  .input-container {
+    max-width: 22rem;
+  }
+
+  .filtered-section {
+    max-width: 1250px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .pagination {
+    max-width: 1250px;
+  }
+}
+
+@media (max-width: 1282px) {
+  .form-section {
+    max-width: 1280px;
+  }
+
+  .input {
+    max-width: 20rem;
+  }
+
+  .input-container {
+    max-width: 20rem;
+  }
+
+  .filtered-section {
+    max-width: 1050px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .pagination {
+    max-width: 1050px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form-section {
+    max-width: 1024px;
+  }
+
+  .input {
+    max-width: 15rem;
+  }
+
+  .input-container {
+    max-width: 15rem;
+  }
+
+  .filtered-section {
+    max-width: 1024px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .pagination {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-section {
+    max-width: 768px;
+  }
+  .form {
+    max-width: 768px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .hidden {
+    display: none !important;
+  }
+  .input-title:nth-child(3) {
+    margin-left: 2rem;
+  }
+  .filtered-section {
+    max-width: 600px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .pagination {
+    max-width: 768px;
+  }
+}
+@media (max-width: 640px) {
+  .form-section {
+    max-width: 500px;
+    margin-top: 2rem;
+  }
+  .form {
+    max-width: 568px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .input {
+    max-width: 12rem;
+  }
+
+  .input-container {
+    max-width: 12rem;
+  }
+
+  .input-title:nth-child(3) {
+    margin-left: 2rem;
+  }
+  .filtered-section {
+    max-width: 408px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 310px;
+  }
+  .pagination {
+    max-width: 408px;
+  }
+}
+@media (max-width: 482px) {
+  .form-section {
+    max-width: 280px;
+  }
+  .form {
+    max-width: 280px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-title {
+    justify-self: center;
+  }
+  .input-title:nth-child(1) {
+    margin-right: 2rem;
+  }
+  .input-title:nth-child(2) {
+    margin-left: 6.5rem;
+  }
+  .input-title:nth-child(3) {
+    margin-left: 0;
+  }
+  .filtered-section {
+    max-width: 280px;
+    grid-template-columns: 50px;
+    grid-auto-rows: 280px;
+  }
+  .pagination {
+    max-width: 280px;
+  }
+}

@@ -118,3 +118,77 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 1480px) {
+  .card {
+    max-height: 280px;
+    max-width: 280px;
+  }
+}
+@media (max-width: 1024px) {
+  .card {
+    max-height: 265px;
+    max-width: 265px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-height: 265px;
+    max-width: 265px;
+  }
+  .card > h2 {
+    font-size: 1.3rem;
+  }
+
+  .card > p,
+  .card > time {
+    font-size: 0.9rem;
+  }
+  .div > button {
+    font-weight: 600;
+    height: 30px;
+    width: 80px;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 640px) {
+  .card {
+    max-height: 265px;
+    max-width: 265px;
+  }
+  .card > h2 {
+    font-size: 1.3rem;
+  }
+
+  .card > p,
+  .card > time {
+    font-size: 0.9rem;
+  }
+  .div > button {
+    font-weight: 600;
+    height: 30px;
+    width: 80px;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 482px) {
+  .card {
+    max-height: 230px;
+    max-width: 230px;
+  }
+  .card > h2 {
+    font-size: 1.3rem;
+  }
+
+  .card > p,
+  .card > time {
+    font-size: 0.9rem;
+  }
+  .div > button {
+    font-weight: 600;
+    height: 30px;
+    width: 80px;
+    font-size: 0.7rem;
+  }
+}

@@ -71,7 +71,6 @@ const SeriesList = ({ pageName }) => {
         toast.error(error.message);
       }
     };
-
     if (
       pageNumber >= 1 &&
       debouncedValue?.length === 0 &&
@@ -190,7 +189,7 @@ const SeriesList = ({ pageName }) => {
               }}
             />
           </div>
-          <br />
+          <br className={styles.hidden} />
           {clearFilter &&
             (inputValue !== "" ||
               selectedCountry?.label !== undefined ||

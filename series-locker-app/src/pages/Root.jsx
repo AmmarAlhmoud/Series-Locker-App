@@ -6,7 +6,6 @@ import { toast } from "sonner";
 const Root = () => {
   const token = useLoaderData();
   const submit = useSubmit();
-  console.log("root running....");
 
   useEffect(() => {
     if (!token) {

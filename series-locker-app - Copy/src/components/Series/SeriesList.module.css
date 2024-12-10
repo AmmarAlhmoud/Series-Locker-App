@@ -1,0 +1,118 @@
+.form-section {
+  margin-top: 8rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancelSearch {
+  font-family: inherit;
+  justify-self: center;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+  color: red;
+}
+
+.input {
+  width: 22rem;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+}
+
+.input-title {
+  justify-self: center;
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-align: start;
+  font-size: 1.08rem;
+  margin-bottom: 0.4em;
+}
+
+.input-title > p {
+  font: inherit;
+  color: #888888;
+  font-weight: 800;
+  margin: 0 0 0.2rem 0.8rem;
+}
+
+.name-search {
+  justify-self: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-search > img {
+  margin-top: 1.2rem;
+  height: 28px;
+  width: 28px;
+}
+
+.dropdown {
+  width: 22rem;
+}
+.dropdown > div {
+  margin-left: 1.8rem;
+  width: 22rem;
+}
+
+.dropdown > p {
+  margin-left: 2.4rem;
+}
+
+.filtered-section {
+  min-height: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-auto-flow: row;
+  place-content: center;
+}
+
+.pagination {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.7rem;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  height: 300px;
+  margin-top: 4rem;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: 1fr !important;
+  place-content: center;
+}
+
+.bar-container {
+  display: grid;
+  place-content: center;
+}
+
+.no-content {
+  height: 300px;
+  margin-top: 1rem;
+  font-family: inherit;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: 1fr !important;
+  place-content: center;
+}

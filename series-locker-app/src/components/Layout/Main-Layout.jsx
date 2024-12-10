@@ -36,7 +36,7 @@ const Main_Layout = (props) => {
   }
 
   return (
-    <main  className={styles.main}>
+    <main className={styles.main}>
       <section className={styles["main-sec"]}>
         <header className={styles.header}>
           <div>
@@ -54,7 +54,7 @@ const Main_Layout = (props) => {
           <h1 id="HomePage">SERIES LOCKER</h1>
         </section>
         <section className={styles["sec-3"]}>
-          <h4>{pageName}</h4>
+          {/* <h4>{pageName}</h4> */}
         </section>
       </section>
       <main id="starter" className={styles["children-sec"]}>

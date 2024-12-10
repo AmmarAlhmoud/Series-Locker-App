@@ -118,6 +118,7 @@ const AddSeries = () => {
       setIsSubmitting(true);
 
       dispatch(appStateActions.setNewSeriesData(formData));
+      setIsSubmitting(true);
 
       setWatched(false);
       setPlanningToWatch(false);
@@ -166,6 +167,7 @@ const AddSeries = () => {
     if (newSeriesData !== null) {
       sendData();
       dispatch(appStateActions.setNewSeriesData(null));
+      setIsSubmitting(false);
     }
     window.scrollTo(0, document.getElementById("starter").offsetTop);
   }, [newSeriesData]);

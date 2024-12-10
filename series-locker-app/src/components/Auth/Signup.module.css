@@ -91,3 +91,33 @@
   color: #fff;
   font-weight: 800;
 }
+
+@media (max-width: 1282px) {
+  .signup-section {
+    max-width: 1282px;
+  }
+}
+@media (max-width: 1024px) {
+  .signup-section {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-section {
+    max-width: 768px;
+  }
+  .form-section {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .signup-section {
+    max-width: 600px;
+  }
+}
+@media (max-width: 482px) {
+  .signup-section {
+    max-width: 482px;
+  }
+}

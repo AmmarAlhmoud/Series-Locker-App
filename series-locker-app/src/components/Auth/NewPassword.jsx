@@ -86,6 +86,7 @@ const NewPassword = () => {
           password: formData.password?.trim(),
           confirmPassword: formData.confirmPassword?.trim(),
         });
+        setLoading(true);
       }
     }
   };
@@ -121,7 +122,6 @@ const NewPassword = () => {
     };
 
     if (submittedData !== null) {
-      setLoading(true);
       resetPassword();
       setSubmittedData(null);
       setLoading(false);

@@ -205,10 +205,8 @@ const EditSeries = () => {
       dispatch(appStateActions.setSelectedCountry(null));
       dispatch(appStateActions.setSelectedWatchingType(null));
 
-      setIsSubmitting(true);
-
       dispatch(appStateActions.setEditedSeriesData(formData));
-
+      setIsSubmitting(true);
       setWatched(false);
       setPlanningToWatch(false);
       setIsSubmitting(false);
@@ -271,6 +269,7 @@ const EditSeries = () => {
     if (editedSeriesData !== null) {
       updateData();
       dispatch(appStateActions.setEditedSeriesData(null));
+      setIsSubmitting(false);
       if (editedSeriesData.watchingType === "watched") {
         naviagte("/watched-series");
       } else {
